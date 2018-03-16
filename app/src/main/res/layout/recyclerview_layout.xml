@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+
+    <LinearLayout
+        android:id="@+id/linearLayoutAll"
+        android:layout_width="match_parent"
+        android:layout_height="75dp"
+        android:orientation="vertical"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <android.support.constraint.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/imageviewIcon"
+                android:layout_width="82dp"
+                android:layout_height="70dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@mipmap/ic_launcher" />
+
+            <TextView
+                android:id="@+id/textviewLabel"
+                android:layout_width="221dp"
+                android:layout_height="20dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:text="TextView"
+                app:layout_constraintStart_toEndOf="@+id/imageviewIcon"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/textviewName"
+                android:layout_width="225dp"
+                android:layout_height="17dp"
+                android:text="TextView"
+                app:layout_constraintStart_toStartOf="@+id/textviewLabel"
+                app:layout_constraintTop_toBottomOf="@+id/textviewLabel" />
+
+            <TextView
+                android:id="@+id/textviewSize"
+                android:layout_width="195dp"
+                android:layout_height="16dp"
+                android:layout_marginTop="4dp"
+                android:text="TextView"
+                app:layout_constraintStart_toStartOf="@+id/textviewName"
+                app:layout_constraintTop_toBottomOf="@+id/textviewName" />
+        </android.support.constraint.ConstraintLayout>
+    </LinearLayout>
+</android.support.constraint.ConstraintLayout>
